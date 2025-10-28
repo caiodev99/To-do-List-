@@ -87,7 +87,7 @@ main {
 .tarefa-a-fazer {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 100%;
   border: 2px solid #E1E1E1;
   padding: 10px 5px;
   font-size: 13px;
@@ -143,18 +143,30 @@ main {
 .task-nome {
   width: 70%;
 }
-@media (max-width: 1254px) {
+
+.secao-a-fazer {
+  width: 33%;
+}
+
+@media (max-width: 795px) {
   main, h1 {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .container-adicionar-tarefa input {
-    width: 250px;
+    width: 90%;
   }
 
   .container-secoes {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+  }
+  .secao-a-fazer, .secao-em-andamento, .secao-feito {
+    width: 90%;
   }
 }
+
+
+
